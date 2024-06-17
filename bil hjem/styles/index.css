@@ -1,0 +1,76 @@
+.carcontainer {
+    text-align: center;
+    max-width: 80rem;
+    height: 1000px;
+    margin: auto;
+    color: rgb(0, 0, 0);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(255, 255, 255, 0.8); /* Adjust the alpha value as needed */
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    padding: 20px 25px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    font-family: sans-serif;
+    background: #f3f3f3;
+    color: black; 
+    height: 200px;
+}
+
+#search {
+    width: 40%;
+    padding: 10px;
+}
+
+.carGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carCards {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.carPictureContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;
+}
+
+.carPicture {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+.carInfo {
+    padding: 10px;
+}
+
+@media (max-width: 800px) {
+    .carGrid {
+        grid-template-columns: 1fr;
+    }
+}
+
+button {
+    background-color: rgb(74, 146, 235);
+    color: white;
+    padding: 14px 20px;
+    border-radius: 5px;
+    margin: 7px 0;
+    width: 100%;
+    font-size: 18px;
+}

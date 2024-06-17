@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About us</title>
+    <link rel="stylesheet" href="styles/about.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(function () {
+            $("#header").load("navbar.php");
+            $("#footer").load("footer.html");
+        });
+    </script>
+</head>
+<body>
+    <div id="header"></div>
+
+    <div class="about-section">
+        <h1>About Us Page</h1>
+        <p>Some text about who we are and what we do.</p>
+      </div>
+      
+      <h2 style="text-align:center">Our Team</h2>
+      <div class="row">
+        <div class="column">
+          <div class="card">
+            <img src="/imgs/john.jpg" alt="John" style="width:100%; height:auto; max-height:320px;">
+            <div class="container">
+              <h2>John Doe</h2>
+              <p class="title">CEO & Founder</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>john@AlphabbBiler.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="column">
+          <div class="card">
+            <img src="/imgs/jane.jpg" alt="Jane" style="width:100%; height:auto; max-height:320px;">
+            <div class="container">
+              <h2>Jane Doe</h2>
+              <p class="title">Support</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>jane@bbBiler.com</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="column">
+          <div class="card">
+            <img src="/imgs/mike.jpg" alt="Mike" style="width:100%; height:auto; max-height:320px;">
+            <div class="container">
+              <h2>Mike Ross</h2>
+              <p class="title">manager</p>
+              <p>Some text that describes me lorem ipsum ipsum lorem.</p>
+              <p>mike@bbBiler.com</p>
+            </div>
+          </div>
+        </div>
+      
+       
+      </div>
+      <div id="footer"></div>
+</body>
+</html>
